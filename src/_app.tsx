@@ -1,10 +1,8 @@
+import { useRoutes } from 'react-router-dom';
+import routes from './route';
+
 const App = () => {
-  return (
-    <div className="bg-sky-50">
-      <div>App</div>
-      {'Test'}
-    </div>
-  );
+  return useRoutes(routes);
 };
 
 export default App;
