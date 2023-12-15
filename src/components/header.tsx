@@ -7,7 +7,7 @@ const Header = () => {
         <div className="mr-[60px] font-bold">Yohoho~~~</div>
         <Link to="/">Market</Link>
         <Link to="/">Dashboard</Link>
-        <Link to="/">Rewards</Link>
+        <Link to="/">xKZA</Link>
         <Link to="/">Vote</Link>
         <Link to="/">Bribe</Link>
       </div>
