@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center w-[1200px] h-[60px]">
       <div className="flex gap-[60px]">
-        <div className="mr-[60px] font-bold">Yohoho~~~</div>
+        <div className="mr-[60px] font-bold">Arete</div>
         <Link to="/">Market</Link>
         <Link to="/">Dashboard</Link>
         <Link to="/">xKZA</Link>

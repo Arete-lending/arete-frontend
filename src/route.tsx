@@ -1,5 +1,6 @@
 import { Navigate, RouteObject } from 'react-router-dom';
 import Layout from './layout';
+import Market from './pages/market';
 
 const routes: RouteObject[] = [
   {
@@ -8,7 +9,7 @@ const routes: RouteObject[] = [
     children: [
       {
         path: '/',
-        element: <></>
+        element: <Market />
       }
     ]
   },
