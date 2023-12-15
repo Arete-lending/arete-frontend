@@ -1,19 +1,20 @@
 import { Link } from 'react-router-dom';
+import { Button } from 'antd';
 
 const Header = () => {
   return (
     <div className="flex justify-between items-center w-[1200px] h-[60px]">
-      <div className="flex gap-[60px]">
-        <div className="mr-[60px] font-bold">Arete</div>
+      <div className="flex gap-[60px] items-center">
+        <div className="mr-[60px] font-bold text-lg">Arete</div>
         <Link to="/">Market</Link>
         <Link to="/">Dashboard</Link>
         <Link to="/">xKZA</Link>
         <Link to="/">Vote</Link>
         <Link to="/">Bribe</Link>
       </div>
-      <button className="bg-lime-300 px-3 py-2 rounded-lg text-[14px] font-bold">
+      <Button className="text-[14px] font-bold" type="primary">
         Connect Wallet
-      </button>
+      </Button>
     </div>
   );
 };
