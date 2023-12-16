@@ -5,7 +5,7 @@ const Market = () => {
     <div>
       <div className="flex w-[1200px] gap-[60px] my-[60px]">
         <div>
-          <div className="flex font-bold text-[48px] h-[60px] mb-[10px] items-end">$21.30M</div>
+          <div className="flex font-bold text-[42px] h-[60px] mb-[10px] items-end">$21.30M</div>
           <div className="text-[16px]">Total Value Locked</div>
         </div>
         <div>
