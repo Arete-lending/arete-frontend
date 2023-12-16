@@ -1,6 +1,7 @@
 import { Navigate, RouteObject } from 'react-router-dom';
 import Layout from './layout';
 import Market from './pages/market';
+import Dashboard from './pages/dashboard';
 
 const routes: RouteObject[] = [
   {
@@ -10,6 +11,10 @@ const routes: RouteObject[] = [
       {
         path: '/',
         element: <Market />
+      },
+      {
+        path: '/dashboard',
+        element: <Dashboard />
       }
     ]
   },
