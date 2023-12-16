@@ -3,7 +3,7 @@ import { Card } from 'antd';
 
 const Vote = () => {
   return (
-    <div>
+    <div className="overflow-auto w-full flex flex-col items-center">
       <div className="flex justify-between items-center w-[1200px] gap-[60px] my-[60px]">
         <div>
           <div className="flex  gap-[60px] my-[60px]">
