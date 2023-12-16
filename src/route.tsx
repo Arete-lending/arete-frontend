@@ -3,6 +3,7 @@ import Layout from './layout';
 import Market from './pages/market';
 import Dashboard from './pages/dashboard';
 import Bribe from './pages/bribe';
+import Vote from './pages/vote';
 
 const routes: RouteObject[] = [
   {
@@ -20,6 +21,10 @@ const routes: RouteObject[] = [
       {
         path: '/bribe',
         element: <Bribe />
+      },
+      {
+        path: '/vote',
+        element: <Vote />
       }
     ]
   },

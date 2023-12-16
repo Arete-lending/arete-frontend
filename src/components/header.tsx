@@ -17,7 +17,7 @@ const Header = () => {
         <Link to="/" className="no-underline text-black">
           xKZA
         </Link>
-        <Link to="/" className="no-underline text-black">
+        <Link to="/vote" className="no-underline text-black">
           Vote
         </Link>
         <Link to="/bribe" className="no-underline text-black">
