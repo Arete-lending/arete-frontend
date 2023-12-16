@@ -4,6 +4,7 @@ import Market from './pages/market';
 import Dashboard from './pages/dashboard';
 import Bribe from './pages/bribe';
 import Vote from './pages/vote';
+import XATE from './pages/x-ate';
 
 const routes: RouteObject[] = [
   {
@@ -25,6 +26,10 @@ const routes: RouteObject[] = [
       {
         path: '/vote',
         element: <Vote />
+      },
+      {
+        path: '/xate',
+        element: <XATE />
       }
     ]
   },

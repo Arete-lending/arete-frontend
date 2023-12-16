@@ -15,8 +15,8 @@ const Header = () => {
           <Link to="/dashboard" className="no-underline text-black">
             Dashboard
           </Link>
-          <Link to="/" className="no-underline text-black">
-            xKZA
+          <Link to="/xate" className="no-underline text-black">
+            xATE
           </Link>
           <Link to="/vote" className="no-underline text-black">
             Vote
