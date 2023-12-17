@@ -3,7 +3,7 @@ import { Button } from 'antd';
 
 const Header = () => {
   return (
-    <div className="shadow-md top-0 sticky w-full flex justify-center">
+    <div className="shadow-md top-0 sticky w-full flex justify-center bg-white">
       <div className="flex justify-between items-center w-[1200px] h-[60px]">
         <div className="flex gap-[60px] items-center">
           <Link to="/" className="mr-[60px] font-bold text-lg no-underline text-black">
