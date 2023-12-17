@@ -7,8 +7,8 @@ export const tokenDescriptionItems: DescriptionsProps['items'] = [
     children: 0.0
   },
   {
-    key: 'claimable',
-    label: 'Claimable',
+    key: 'value',
+    label: 'Value($)',
     children: 0.0
   }
 ];
@@ -25,7 +25,7 @@ export const extractColumns = [
     dataIndex: 'output'
   },
   {
-    title: 'Remaining time',
+    title: 'Elapsed time',
     key: 'time',
     dataIndex: 'time'
   },
