@@ -2,7 +2,11 @@
 export default {
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
-    extend: {}
+    extend: {},
+    colors: {
+      tblack: '#141414',
+      twhite: '#ffffffd9'
+    }
   },
   plugins: [],
   corePlugins: {

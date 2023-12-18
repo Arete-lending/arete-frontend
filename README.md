@@ -7,6 +7,7 @@
 - [ ] Asset & Balance Modal
 - [x] Save wallet in localStorage
 - [ ] // TODOs
+- [ ] Account selector
 - [ ] Change theme
 
 # API Status
