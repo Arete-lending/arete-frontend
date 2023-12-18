@@ -6,6 +6,7 @@
 - [ ] Asset logo in tables
 - [ ] Arete logo
 - [ ] Header z-index
+- [ ] Link gitbook (https://arete-finance.gitbook.io/introduction/introduction/welcome-to-arete)
 - [x] Account selector in Connect Wallet
 - [x] Action buttons in Extract ATE
 - [x] Implement Epoch card
