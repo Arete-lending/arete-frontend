@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const { Search } = Input;
 
-const VoteTable = () => {
+const VoteTable = ({ VPU }: { VPU: string }) => {
   const [market, setMarket] = useState('');
   return (
     <div className="w-[1200px]">
@@ -17,7 +17,7 @@ const VoteTable = () => {
         />
         <Card>
           <div className="flex justify-between items-center gap-[20px]">
-            Vote Power Used: 0%
+            Vote Power Used: {VPU}
             <Button disabled>Cast Vote</Button>
           </div>
         </Card>

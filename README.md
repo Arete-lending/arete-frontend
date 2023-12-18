@@ -26,10 +26,10 @@
 |:white_large_square:|dashboard|`/dashboard/action/borrow?address=???&asset=???&balance=???`|`GET`|Borrow action|
 |:white_large_square:|dashboard|`/dashboard/action/repay?address=???&asset=???&balance=???`|`GET`|Repay action|
 |:white_check_mark:|ate|`/ate/header?address=???`|`GET`|xATE tab header|
-|:white_large_square:|ate|`/ate/vesting?address=???`|`GET`|contents of "Extract ATE" table|
+|:white_check_mark:|ate|`/ate/vesting?address=???`|`GET`|contents of "Extract ATE" table|
 |:white_large_square:|ate|`/ate/action/forge?address=???&asset=???&balance=???`|`GET`|Forge action|
 |:white_large_square:|ate|`/ate/action/extract?address=???&asset=???&balance=???`|`GET`|Extract action|
-|:white_large_square:|vote|`/vote/header?address=???`|`GET`|Vote tab header & Vote Power Used information|
+|:white_check_mark:|vote|`/vote/header?address=???`|`GET`|Vote tab header & Vote Power Used information|
 |:white_large_square:|vote|`/vote/content?address=???`|`GET`|Vote tab table content|
 |:white_large_square:|vote|`/vote/action/vote?address=???&asset=???&balance=???`|`GET`|Vote table action|
 |:white_large_square:|bribe|`/bribe/content?address=???`|`GET`|Bribe tab table Content|
