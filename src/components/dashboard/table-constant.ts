@@ -1,3 +1,10 @@
+import {
+  getBorrowTable,
+  getSupplyTable,
+  getToBorrowTable,
+  getToSupplyTable
+} from '@/apis/dashboard';
+
 export const supplyColumns = [
   {
     title: 'Asset',
@@ -26,6 +33,19 @@ export const supplyColumns = [
   }
 ];
 
+// TODO: action
+export const getSupplyTableData = () => {
+  const table = getSupplyTable();
+  return table?.map((row, i) => ({
+    key: i,
+    asset: row.name,
+    balance: row.balance,
+    aPY: row.APY,
+    collateral: row.COL,
+    action: null
+  }));
+};
+
 export const borrowColumns = [
   {
     title: 'Asset',
@@ -48,6 +68,18 @@ export const borrowColumns = [
     key: 'action'
   }
 ];
+
+// TODO: action
+export const getBorrowTableData = () => {
+  const table = getBorrowTable();
+  return table?.map((row, i) => ({
+    key: i,
+    asset: row.asset,
+    debt: row.DEBT,
+    aPY: row.APY,
+    action: null
+  }));
+};
 
 export const toSupplyColumns = [
   {
@@ -77,6 +109,19 @@ export const toSupplyColumns = [
   }
 ];
 
+// TODO: action
+export const getToSupplyTableData = () => {
+  const table = getToSupplyTable();
+  return table?.map((row, i) => ({
+    key: i,
+    asset: row.asset,
+    walletBalance: row.balance,
+    aPY: row.APY,
+    collateralType: row.ctype,
+    action: null
+  }));
+};
+
 export const toBorrowColumns = [
   {
     title: 'Asset',
@@ -99,3 +144,15 @@ export const toBorrowColumns = [
     key: 'action'
   }
 ];
+
+// TODO: action
+export const getToBorrowTableData = () => {
+  const table = getToBorrowTable();
+  return table?.map((row, i) => ({
+    key: i,
+    asset: row.asset,
+    available: row.AV,
+    aPY: row.APY,
+    action: null
+  }));
+};

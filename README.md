@@ -7,6 +7,7 @@
 - [ ] Asset & Balance Modal
 - [x] Save wallet in localStorage
 - [ ] // TODOs
+- [ ] Change theme
 
 # API Status
 ## API Spec
@@ -19,10 +20,10 @@
 |:white_check_mark:|dashboard|`/dashboard/header?address=???`|`GET`|대시보드 header 정보|
 |:white_check_mark:|dashboard|`/dashboard/header/supply?address=???`|`GET`|My Supplies tab 헤더 정보|
 |:white_check_mark:|dashboard|`/dashboard/header/borrow?address=???`|`GET`|My Borrows tab 헤더 정보|
-|:white_large_square:|dashboard|`/dashboard/supply?address=???`|`GET`|My Supplies tab detail|
-|:white_large_square:|dashboard|`/dashboard/borrow?address=???`|`GET`|My Borrows tab detail|
-|:white_large_square:|dashboard|`/dashboard/asset/supply?address=???`|`GET`|Assets to Supply tab detail|
-|:white_large_square:|dashboard|`/dashboard/asset/borrow?address=???`|`GET`|Assets to Borrow tab detail|
+|:white_check_mark:|dashboard|`/dashboard/supply?address=???`|`GET`|My Supplies tab detail|
+|:white_check_mark:|dashboard|`/dashboard/borrow?address=???`|`GET`|My Borrows tab detail|
+|:white_check_mark:|dashboard|`/dashboard/asset/supply?address=???`|`GET`|Assets to Supply tab detail|
+|:white_check_mark:|dashboard|`/dashboard/asset/borrow?address=???`|`GET`|Assets to Borrow tab detail|
 |:white_large_square:|dashboard|`/dashboard/action/supply?address=???&asset=???&balance=???`|`GET`|Supply action|
 |:white_large_square:|dashboard|`/dashboard/action/withdraw?address=???&asset=???&balance=???`|`GET`|Withdraw action|
 |:white_large_square:|dashboard|`/dashboard/action/borrow?address=???&asset=???&balance=???`|`GET`|Borrow action|
