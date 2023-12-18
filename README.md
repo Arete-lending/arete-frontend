@@ -13,7 +13,7 @@
 |---|---|-------------------|-----------|-----------------------|
 |:white_large_square:|user|`/user/check?address=???`|`GET`| 주소가 유효한지 확인 (204 / 404)|
 |:white_check_mark:|market|`/market/header`|`GET`|Market Header 내용|
-|:white_large_square:|market|`/market/content`|`GET`|Market Content 내용|
+|:white_check_mark:|market|`/market/content`|`GET`|Market Content 내용|
 |:white_large_square:|dashboard|`/dashboard/header?address=???`|`GET`|대시보드 header 정보|
 |:white_large_square:|dashboard|`/dashboard/header/supply?address=???`|`GET`|My Supplies tab 헤더 정보|
 |:white_large_square:|dashboard|`/dashboard/header/borrow?address=???`|`GET`|My Borrows tab 헤더 정보|

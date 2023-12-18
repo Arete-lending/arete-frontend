@@ -1,3 +1,5 @@
+import { getMarketTableContent } from '@/apis/market';
+
 export const columns = [
   {
     title: 'Assets',
@@ -40,6 +42,22 @@ export const columns = [
     key: 'available'
   }
 ];
+
+// TODO: add cell renders
+export const getMarketTableData = () => {
+  const table = getMarketTableContent();
+  return table?.map((row, i) => ({
+    key: i,
+    assets: row.name,
+    collateralType: row.ctype,
+    lTV: row.LTV,
+    supplyAPY: row.sAPY,
+    totalSupplied: row.TS,
+    borrowAPY: row.bAPY,
+    totalBorrowed: row.TB,
+    available: row.AV
+  }));
+};
 
 export const data = [
   {
