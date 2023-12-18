@@ -3,7 +3,10 @@
 - [ ] Table cell renders
 - [ ] Modal for selecting asset & balance in actions
 - [ ] any TODO comments
-- [ ] Account selector in Connect Wallet
+- [ ] Asset logo in tables
+- [ ] Arete logo
+- [ ] Header z-index
+- [x] Account selector in Connect Wallet
 - [x] Action buttons in Extract ATE
 - [x] Implement Epoch card
 - [x] Save wallet in localStorage
