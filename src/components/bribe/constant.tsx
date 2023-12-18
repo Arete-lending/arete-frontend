@@ -1,3 +1,4 @@
+import { getBribeTable } from '@/apis/bribe';
 import { Button } from 'antd';
 
 export const bribeColumns = [
@@ -34,13 +35,16 @@ export const bribeColumns = [
   }
 ];
 
-export const bribeData = [
-  {
-    assets: 'HAY',
-    totalVotes: 0.0,
-    totalBribery: 0.0,
-    bribesAndInterest: 0.0,
-    votingAPR: 0.0,
+// TODO: implement action
+export const getBribeTableData = () => {
+  const table = getBribeTable();
+  return table?.map((row, i) => ({
+    key: i,
+    assets: row.asset,
+    totalVotes: row.TV,
+    totalBribery: row.TB,
+    bribesAndInterest: row['B&I'],
+    votingAPR: row.VAPR,
     action: null
-  }
-];
+  }));
+};
