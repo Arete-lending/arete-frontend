@@ -1,3 +1,5 @@
+import { getVoteTable } from '@/apis/vote';
+
 export const voteColumns = [
   {
     title: 'Assets',
@@ -35,3 +37,17 @@ export const voteColumns = [
     dataIndex: 'myVotesRatio'
   }
 ];
+
+export const getVoteTableData = () => {
+  const table = getVoteTable();
+  return table?.map((row, i) => ({
+    key: i,
+    assets: row.asset,
+    totalVotes: row.TV,
+    bribes: row.bribes,
+    bribesAndInterest: row['B&I'],
+    votingAPR: row.VAPR,
+    myVotes: row.MV,
+    myVotesRatio: row.MVP
+  }));
+};

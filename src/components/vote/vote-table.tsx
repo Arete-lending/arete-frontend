@@ -1,5 +1,5 @@
 import { Button, Card, Table, Input } from 'antd';
-import { voteColumns } from './constant';
+import { getVoteTableData, voteColumns } from './constant';
 import { useState } from 'react';
 
 const { Search } = Input;
@@ -22,7 +22,7 @@ const VoteTable = ({ VPU }: { VPU: string }) => {
           </div>
         </Card>
       </div>
-      <Table columns={voteColumns} dataSource={[]} pagination={false} />
+      <Table columns={voteColumns} dataSource={getVoteTableData()} pagination={false} />
     </div>
   );
 };

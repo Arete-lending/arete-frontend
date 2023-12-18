@@ -30,7 +30,7 @@
 |:white_large_square:|ate|`/ate/action/forge?address=???&asset=???&balance=???`|`GET`|Forge action|
 |:white_large_square:|ate|`/ate/action/extract?address=???&asset=???&balance=???`|`GET`|Extract action|
 |:white_check_mark:|vote|`/vote/header?address=???`|`GET`|Vote tab header & Vote Power Used information|
-|:white_large_square:|vote|`/vote/content?address=???`|`GET`|Vote tab table content|
+|:white_check_mark:|vote|`/vote/content?address=???`|`GET`|Vote tab table content|
 |:white_large_square:|vote|`/vote/action/vote?address=???&asset=???&balance=???`|`GET`|Vote table action|
 |:white_large_square:|bribe|`/bribe/content?address=???`|`GET`|Bribe tab table Content|
 |:white_large_square:|bribe|`/bribe/action/bribe?address=???&asset=???&balance=???`|`GET`|Bribe action|
