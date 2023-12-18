@@ -19,7 +19,7 @@
 |:white_large_square:|dashboard|`/dashboard/header/borrow?address=???`|`GET`|My Borrows tab 헤더 정보|
 |:white_large_square:|dashboard|`/dashboard/supply?address=???`|`GET`|My Supplies tab detail|
 |:white_large_square:|dashboard|`/dashboard/borrow?address=???`|`GET`|My Borrows tab detail|
-|:white_large_square:|:white_large_square:|dashboard|`/dashboard/asset/supply?address=???`|`GET`|Assets to Supply tab detail|
+|:white_large_square:|dashboard|`/dashboard/asset/supply?address=???`|`GET`|Assets to Supply tab detail|
 |:white_large_square:|dashboard|`/dashboard/asset/borrow?address=???`|`GET`|Assets to Borrow tab detail|
 |:white_large_square:|dashboard|`/dashboard/action/supply?address=???&asset=???&balance=???`|`GET`|Supply action|
 |:white_large_square:|dashboard|`/dashboard/action/withdraw?address=???&asset=???&balance=???`|`GET`|Withdraw action|
