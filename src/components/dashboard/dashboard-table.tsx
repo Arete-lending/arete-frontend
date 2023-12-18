@@ -6,11 +6,11 @@ const DashboardTable = () => {
   return (
     <div className="w-[1200px] py-[20px] flex flex-wrap">
       <div className="flex-[50%] pr-4 pb-4">
-        <Descriptions title="My Supplies" layout="vertical" items={supplyItems} />
+        <Descriptions title="My Supplies" layout="vertical" items={supplyItems()} />
         <Table columns={supplyColumns} dataSource={[]} pagination={false} />
       </div>
       <div className="flex-[50%] pl-4 pb-4">
-        <Descriptions title="My Borrows" layout="vertical" items={borrowItems} />
+        <Descriptions title="My Borrows" layout="vertical" items={borrowItems()} />
         <Table columns={borrowColumns} dataSource={[]} pagination={false} />
       </div>
       <div className="flex-[50%] pr-4">
