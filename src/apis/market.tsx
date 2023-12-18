@@ -9,8 +9,12 @@ interface MarketHeader {
 
 export const getMarketHeader = () => {
   const [data, setData] = useState<MarketHeader>();
+  const req = async () => {
+    const res = await axios.get('/market/header');
+    setData(res.data);
+  };
   useEffect(() => {
-    axios.get('/market/header').then((res) => setData(res.data));
+    req();
   }, []);
   return data;
 };
@@ -35,8 +39,12 @@ interface MarketTableRow {
 
 export const getMarketTableContent = () => {
   const [data, setData] = useState<MarketTableRow[]>();
+  const req = async () => {
+    const res = await axios.get('/market/content');
+    setData(res.data);
+  };
   useEffect(() => {
-    axios.get('/market/content').then((res) => setData(res.data));
+    req();
   }, []);
   return data;
 };
