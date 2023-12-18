@@ -9,7 +9,7 @@ const App = () => {
       theme={{
         algorithm: theme.darkAlgorithm,
         token: {
-          colorPrimary: '#fccb06'
+          colorPrimary: '#dc4446'
         }
       }}>
       {useRoutes(routes)}

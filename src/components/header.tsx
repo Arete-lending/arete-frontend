@@ -39,10 +39,7 @@ const Header = () => {
         {account ? (
           <Tag className="w-[120px] text-ellipsis overflow-hidden whitespace-nowrap">{account}</Tag>
         ) : (
-          <Button
-            className="text-[14px] font-bold text-tblack"
-            onClick={connectWallet}
-            type="primary">
+          <Button className="text-[14px] font-bold" onClick={connectWallet} type="primary">
             Connect Wallet
           </Button>
         )}
