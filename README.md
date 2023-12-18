@@ -1,14 +1,13 @@
 # TODOS
-- [ ] Action buttons in Dashboard tables (asset, balance)
-- [x] Action buttons in Extract ATE
-- [ ] Action buttons in Bribe (asset, balance)
-- [x] Implement Epoch card
+- [ ] Action API link
 - [ ] Table cell renders
-- [ ] Asset & Balance Modal
+- [ ] Modal for selecting asset & balance in actions
+- [ ] any TODO comments
+- [ ] Account selector in Connect Wallet
+- [x] Action buttons in Extract ATE
+- [x] Implement Epoch card
 - [x] Save wallet in localStorage
-- [ ] // TODOs
-- [ ] Account selector
-- [ ] Change theme
+- [x] Change theme
 
 # API Status
 ## API Spec

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button, Tag } from 'antd';
 import { useSDK } from '@metamask/sdk-react';
+import { CheckCircleOutlined } from '@ant-design/icons';
 
 const Header = () => {
   const { sdk } = useSDK();
@@ -37,7 +38,11 @@ const Header = () => {
           </Link>
         </div>
         {account ? (
-          <Tag className="w-[120px] text-ellipsis overflow-hidden whitespace-nowrap">{account}</Tag>
+          <Tag
+            icon={<CheckCircleOutlined />}
+            className="w-[120px] text-[13px] text-ellipsis overflow-hidden whitespace-nowrap">
+            {account}
+          </Tag>
         ) : (
           <Button className="text-[14px] font-bold" onClick={connectWallet} type="primary">
             Connect Wallet
