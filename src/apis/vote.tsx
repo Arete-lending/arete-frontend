@@ -1,6 +1,4 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { addr } from './config';
+import { useAxios } from './config';
 
 interface VoteHeader {
   MR: string;
@@ -10,13 +8,9 @@ interface VoteHeader {
 }
 
 export const getVoteHeader = () => {
-  const [data, setData] = useState<VoteHeader>();
-  const req = async () => {
-    const res = await axios.get(`/vote/header?address=${addr}`);
-    setData(res.data);
-  };
-  useEffect(() => {
-    req();
-  }, []);
-  return data;
+  return useAxios<VoteHeader>('/vote/header', true);
+};
+
+export const getVoteTable = () => {
+  return useAxios('/vote/content', true);
 };

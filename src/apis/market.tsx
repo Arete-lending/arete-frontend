@@ -1,5 +1,4 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useAxios } from './config';
 
 interface MarketHeader {
   TA: string;
@@ -8,15 +7,7 @@ interface MarketHeader {
 }
 
 export const getMarketHeader = () => {
-  const [data, setData] = useState<MarketHeader>();
-  const req = async () => {
-    const res = await axios.get('/market/header');
-    setData(res.data);
-  };
-  useEffect(() => {
-    req();
-  }, []);
-  return data;
+  return useAxios<MarketHeader>('/market/header');
 };
 
 interface MarketTableRow {
@@ -38,13 +29,5 @@ interface MarketTableRow {
 }
 
 export const getMarketTableContent = () => {
-  const [data, setData] = useState<MarketTableRow[]>();
-  const req = async () => {
-    const res = await axios.get('/market/content');
-    setData(res.data);
-  };
-  useEffect(() => {
-    req();
-  }, []);
-  return data;
+  return useAxios<MarketTableRow[]>('/market/content');
 };
