@@ -2,7 +2,7 @@
 - [ ] Action buttons in Dashboard tables (asset, balance)
 - [ ] Action buttons in Extract ATE
 - [ ] Action buttons in Bribe (asset, balance)
-- [ ] Implement Epoch card
+- [x] Implement Epoch card
 - [ ] Table cell renders
 - [ ] Asset & Balance Modal
 - [x] Save wallet in localStorage

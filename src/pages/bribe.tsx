@@ -1,5 +1,5 @@
 import BribeTable from '@/components/bribe/bribe-table';
-import { Card } from 'antd';
+import EpochCard from '@/components/epoch-card';
 
 const Bribe = () => {
   return (
@@ -9,11 +9,7 @@ const Bribe = () => {
           <div className="font-bold text-[36px] my-[12px]">Bribe</div>
           <div>Bribers can deposit bribes to make a pool more attractive to voters.</div>
         </div>
-        <Card>
-          <p>Next Epoch: Epoch #0</p>
-          <p>--/--/-- UTC</p>
-          <p>Starting in: 0 Day 00:00:00</p>
-        </Card>
+        <EpochCard />
       </div>
       <BribeTable />
     </div>

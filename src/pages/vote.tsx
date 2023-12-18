@@ -1,6 +1,6 @@
 import { getVoteHeader } from '@/apis/vote';
+import EpochCard from '@/components/epoch-card';
 import VoteTable from '@/components/vote/vote-table';
-import { Card } from 'antd';
 
 const Vote = () => {
   const voteHeader = getVoteHeader();
@@ -33,11 +33,7 @@ const Vote = () => {
             Unchanged votes carry over into the next epoch.
           </div>
         </div>
-        <Card>
-          <p>Next Epoch: Epoch #0</p>
-          <p>--/--/-- UTC</p>
-          <p>Starting in: 0 Day 00:00:00</p>
-        </Card>
+        <EpochCard />
       </div>
       <VoteTable VPU={voteHeader?.VPU ?? ''} />
     </div>
