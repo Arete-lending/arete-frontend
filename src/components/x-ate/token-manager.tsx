@@ -1,5 +1,5 @@
 import { Button, Card, Input, Table } from 'antd';
-import { extractColumns } from './constant';
+import { extractColumns, getATEVestingTable } from './constant';
 
 const TokenManager = () => {
   return (
@@ -21,7 +21,7 @@ const TokenManager = () => {
           1 ratio)
           <Button>Extract ATE</Button>
         </div>
-        <Table columns={extractColumns} dataSource={[]} pagination={false} />
+        <Table columns={extractColumns} dataSource={getATEVestingTable()} pagination={false} />
       </Card>
     </div>
   );

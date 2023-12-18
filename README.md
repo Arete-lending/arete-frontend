@@ -11,7 +11,7 @@
 
 |STATUS|TAB|        URI        |   Method  |      Description      |
 |---|---|-------------------|-----------|-----------------------|
-|:white_large_square:|user|`/user/check?address=???`|`GET`| 주소가 유효한지 확인 (204 / 404)|
+|:white_check_mark:|user|`/user/check?address=???`|`GET`| 주소가 유효한지 확인 (204 / 404)|
 |:white_check_mark:|market|`/market/header`|`GET`|Market Header 내용|
 |:white_check_mark:|market|`/market/content`|`GET`|Market Content 내용|
 |:white_large_square:|dashboard|`/dashboard/header?address=???`|`GET`|대시보드 header 정보|
@@ -25,7 +25,7 @@
 |:white_large_square:|dashboard|`/dashboard/action/withdraw?address=???&asset=???&balance=???`|`GET`|Withdraw action|
 |:white_large_square:|dashboard|`/dashboard/action/borrow?address=???&asset=???&balance=???`|`GET`|Borrow action|
 |:white_large_square:|dashboard|`/dashboard/action/repay?address=???&asset=???&balance=???`|`GET`|Repay action|
-|:white_large_square:|ate|`/ate/header?address=???`|`GET`|xATE tab header|
+|:white_check_mark:|ate|`/ate/header?address=???`|`GET`|xATE tab header|
 |:white_large_square:|ate|`/ate/vesting?address=???`|`GET`|contents of "Extract ATE" table|
 |:white_large_square:|ate|`/ate/action/forge?address=???&asset=???&balance=???`|`GET`|Forge action|
 |:white_large_square:|ate|`/ate/action/extract?address=???&asset=???&balance=???`|`GET`|Extract action|
