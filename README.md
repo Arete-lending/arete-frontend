@@ -1,6 +1,6 @@
 # TODOS
 - [ ] Action buttons in Dashboard tables (asset, balance)
-- [ ] Action buttons in Extract ATE
+- [x] Action buttons in Extract ATE
 - [ ] Action buttons in Bribe (asset, balance)
 - [x] Implement Epoch card
 - [ ] Table cell renders

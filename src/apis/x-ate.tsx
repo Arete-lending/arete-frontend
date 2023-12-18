@@ -22,5 +22,5 @@ interface ATEVesting {
 }
 
 export const getATEVesting = () => {
-  return useAxios<ATEVesting>('/ate/vesting', true);
+  return useAxios<ATEVesting[]>('/ate/vesting', true);
 };

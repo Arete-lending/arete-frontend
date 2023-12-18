@@ -1,4 +1,5 @@
 import { getATEHeader, getATEVesting } from '@/apis/x-ate';
+import { Button } from 'antd';
 
 export const getATEDescriptionItems = () => {
   const aTEHeader = getATEHeader();
@@ -49,14 +50,14 @@ export const extractColumns = [
   {
     title: 'Actions',
     key: 'actions',
-    dataIndex: 'actions'
+    dataIndex: 'actions',
+    render: () => <Button>Extract ATE</Button>
   }
 ];
 
 export const getATEVestingTable = () => {
   const table = getATEVesting();
   // TODO: add action render
-  console.log(table);
   return table?.map((row, i) => ({
     key: i,
     xVesting: row.xKZA,

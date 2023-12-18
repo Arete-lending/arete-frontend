@@ -19,7 +19,6 @@ const TokenManager = () => {
         <div className="flex justify-between items-end pb-[30px]">
           Extract your ATE from xATE over a vesting period of 1 days(1 → 0.5 ratio) to 3 months (1 →
           1 ratio)
-          <Button>Extract ATE</Button>
         </div>
         <Table columns={extractColumns} dataSource={getATEVestingTable()} pagination={false} />
       </Card>
