@@ -1,10 +1,12 @@
 # TODOS
 - [ ] Action buttons in Dashboard tables (asset, balance)
 - [ ] Action buttons in Extract ATE
-- [ ] Implement Epoch card
 - [ ] Action buttons in Bribe (asset, balance)
-- [ ] Save wallet in localStorage
+- [ ] Implement Epoch card
+- [ ] Table cell renders
 - [ ] Asset & Balance Modal
+- [x] Save wallet in localStorage
+- [ ] // TODOs
 
 # API Status
 ## API Spec
@@ -32,5 +34,5 @@
 |:white_check_mark:|vote|`/vote/header?address=???`|`GET`|Vote tab header & Vote Power Used information|
 |:white_check_mark:|vote|`/vote/content?address=???`|`GET`|Vote tab table content|
 |:white_large_square:|vote|`/vote/action/vote?address=???&asset=???&balance=???`|`GET`|Vote table action|
-|:white_large_square:|bribe|`/bribe/content?address=???`|`GET`|Bribe tab table Content|
+|:white_check_mark:|bribe|`/bribe/content?address=???`|`GET`|Bribe tab table Content|
 |:white_large_square:|bribe|`/bribe/action/bribe?address=???&asset=???&balance=???`|`GET`|Bribe action|
