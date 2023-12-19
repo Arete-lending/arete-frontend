@@ -16,9 +16,9 @@ const LOGO = {
 
 const AssetLogo = ({ asset }: { asset: string }) => {
   return (
-    <div className="flex gap-[10px] items-center justify-center">
+    <div className="flex gap-[15px] items-center justify-center">
       {LOGO[asset as keyof typeof LOGO]}
-      {asset}
+      <p className="w-[50px] flex justify-left">{asset}</p>
     </div>
   );
 };
