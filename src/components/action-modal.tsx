@@ -6,10 +6,11 @@ import { useState } from 'react';
 interface ActionModalProps {
   label: string;
   endpoint: string;
-  asset?: string;
+  asset: string;
+  isVoteOrBribe?: boolean;
 }
 
-const ActionModal = ({ label, endpoint, asset = 'DAI' }: ActionModalProps) => {
+const ActionModal = ({ label, endpoint, asset, isVoteOrBribe }: ActionModalProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [balance, setBalance] = useState('');
   const showModal = () => {
@@ -33,7 +34,7 @@ const ActionModal = ({ label, endpoint, asset = 'DAI' }: ActionModalProps) => {
         <Input
           value={balance}
           onChange={(e) => setBalance(e.target.value)}
-          addonAfter={asset}
+          addonAfter={isVoteOrBribe ? 'xATE' : asset}
           placeholder="0.00"
           className="my-[30px] text-right"
         />

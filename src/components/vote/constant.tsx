@@ -42,7 +42,7 @@ export const voteColumns = [
     key: 'action',
     dataIndex: 'action',
     render: (asset: string) => (
-      <ActionModal label="Cast Vote" endpoint="/vote/action/vote" asset={asset} />
+      <ActionModal label="Cast Vote" endpoint="/vote/action/vote" asset={asset} isVoteOrBribe />
     )
   }
 ];

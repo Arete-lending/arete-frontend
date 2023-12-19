@@ -32,7 +32,7 @@ export const bribeColumns = [
     dataIndex: 'action',
     key: 'action',
     render: (asset: string) => (
-      <ActionModal label="Bribe" endpoint="/bribe/action/bribe" asset={asset} />
+      <ActionModal label="Bribe" endpoint="/bribe/action/bribe" asset={asset} isVoteOrBribe />
     )
   }
 ];
