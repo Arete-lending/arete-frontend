@@ -1,5 +1,5 @@
 import { getBribeTable } from '@/apis/bribe';
-import { Button } from 'antd';
+import ActionModal from '../action-modal';
 
 export const bribeColumns = [
   {
@@ -31,7 +31,9 @@ export const bribeColumns = [
     title: 'Action',
     dataIndex: 'action',
     key: 'action',
-    render: () => <Button disabled>Bribe</Button>
+    render: (asset: string) => (
+      <ActionModal label="Bribe" endpoint="/bribe/action/bribe" asset={asset} />
+    )
   }
 ];
 
@@ -45,6 +47,6 @@ export const getBribeTableData = () => {
     totalBribery: row.TB,
     bribesAndInterest: row['B&I'],
     votingAPR: row.VAPR,
-    action: null
+    action: row.asset
   }));
 };
