@@ -5,8 +5,9 @@
 - [ ] any TODO comments
 - [ ] Asset logo in tables
 - [ ] Arete logo
-- [x] Link gitbook (https://arete-finance.gitbook.io/introduction/introduction/welcome-to-arete)
 - [ ] Table align
+- [ ] Action modal asset
+- [x] Link gitbook (https://arete-finance.gitbook.io/introduction/introduction/welcome-to-arete)
 - [x] Header z-index
 - [x] Account selector in Connect Wallet
 - [x] Action buttons in Extract ATE

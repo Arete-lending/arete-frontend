@@ -31,7 +31,7 @@ export const supplyColumns = [
     title: 'Action',
     dataIndex: 'action',
     key: 'action',
-    render: () => <ActionModal label="Withdraw" />
+    render: () => <ActionModal label="Withdraw" endpoint="/dashboard/action/withdraw" />
   }
 ];
 
@@ -68,7 +68,7 @@ export const borrowColumns = [
     title: 'Action',
     dataIndex: 'action',
     key: 'action',
-    render: () => <ActionModal label="Repay" />
+    render: () => <ActionModal label="Repay" endpoint="/dashboard/action/repay" />
   }
 ];
 
@@ -109,7 +109,7 @@ export const toSupplyColumns = [
     title: 'Action',
     dataIndex: 'action',
     key: 'action',
-    render: () => <ActionModal label="Supply" />
+    render: () => <ActionModal label="Supply" endpoint="/dashboard/action/supply" />
   }
 ];
 
@@ -146,7 +146,7 @@ export const toBorrowColumns = [
     title: 'Action',
     dataIndex: 'action',
     key: 'action',
-    render: () => <ActionModal label="Borrow" />
+    render: () => <ActionModal label="Borrow" endpoint="/dashboard/action/borrow" />
   }
 ];
 
