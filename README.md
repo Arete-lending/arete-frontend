@@ -7,6 +7,7 @@
 - [ ] Arete logo
 - [ ] Table align
 - [ ] Action modal asset
+- [ ] Change ActionModal for vote and bribe (xATE)
 - [x] Link gitbook (https://arete-finance.gitbook.io/introduction/introduction/welcome-to-arete)
 - [x] Header z-index
 - [x] Account selector in Connect Wallet

@@ -1,4 +1,4 @@
-import { Button, Card, Table, Input } from 'antd';
+import { Card, Table, Input } from 'antd';
 import { getVoteTableData, voteColumns } from './constant';
 import { useState } from 'react';
 
@@ -16,10 +16,7 @@ const VoteTable = ({ VPU }: { VPU: string }) => {
           onChange={(e) => setMarket(e.target.value)}
         />
         <Card>
-          <div className="flex justify-between items-center gap-[20px]">
-            Vote Power Used: {VPU}
-            <Button disabled>Cast Vote</Button>
-          </div>
+          <div className="flex justify-between items-center gap-[20px]">Vote Power Used: {VPU}</div>
         </Card>
       </div>
       <Table columns={voteColumns} dataSource={getVoteTableData()} pagination={false} />

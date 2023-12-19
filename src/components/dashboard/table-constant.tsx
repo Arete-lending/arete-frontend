@@ -31,7 +31,9 @@ export const supplyColumns = [
     title: 'Action',
     dataIndex: 'action',
     key: 'action',
-    render: () => <ActionModal label="Withdraw" endpoint="/dashboard/action/withdraw" />
+    render: (asset: string) => (
+      <ActionModal label="Withdraw" endpoint="/dashboard/action/withdraw" asset={asset} />
+    )
   }
 ];
 
@@ -44,7 +46,7 @@ export const getSupplyTableData = () => {
     balance: row.balance,
     aPY: row.APY,
     collateral: row.COL,
-    action: null
+    action: row.name
   }));
 };
 
@@ -68,7 +70,9 @@ export const borrowColumns = [
     title: 'Action',
     dataIndex: 'action',
     key: 'action',
-    render: () => <ActionModal label="Repay" endpoint="/dashboard/action/repay" />
+    render: (asset: string) => (
+      <ActionModal label="Repay" endpoint="/dashboard/action/repay" asset={asset} />
+    )
   }
 ];
 
@@ -80,7 +84,7 @@ export const getBorrowTableData = () => {
     asset: row.asset,
     debt: row.DEBT,
     aPY: row.APY,
-    action: null
+    action: row.asset
   }));
 };
 
@@ -109,7 +113,9 @@ export const toSupplyColumns = [
     title: 'Action',
     dataIndex: 'action',
     key: 'action',
-    render: () => <ActionModal label="Supply" endpoint="/dashboard/action/supply" />
+    render: (asset: string) => (
+      <ActionModal label="Supply" endpoint="/dashboard/action/supply" asset={asset} />
+    )
   }
 ];
 
@@ -122,7 +128,7 @@ export const getToSupplyTableData = () => {
     walletBalance: row.balance,
     aPY: row.APY,
     collateralType: row.ctype,
-    action: null
+    action: row.asset
   }));
 };
 
@@ -146,7 +152,9 @@ export const toBorrowColumns = [
     title: 'Action',
     dataIndex: 'action',
     key: 'action',
-    render: () => <ActionModal label="Borrow" endpoint="/dashboard/action/borrow" />
+    render: (asset: string) => (
+      <ActionModal label="Borrow" endpoint="/dashboard/action/borrow" asset={asset} />
+    )
   }
 ];
 
@@ -158,6 +166,6 @@ export const getToBorrowTableData = () => {
     asset: row.asset,
     available: row.AV,
     aPY: row.APY,
-    action: null
+    action: row.asset
   }));
 };

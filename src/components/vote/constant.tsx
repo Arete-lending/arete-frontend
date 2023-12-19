@@ -1,4 +1,5 @@
 import { getVoteTable } from '@/apis/vote';
+import ActionModal from '../action-modal';
 
 export const voteColumns = [
   {
@@ -35,6 +36,14 @@ export const voteColumns = [
     title: 'My Votes %',
     key: 'myVotesRatio',
     dataIndex: 'myVotesRatio'
+  },
+  {
+    title: 'Action',
+    key: 'action',
+    dataIndex: 'action',
+    render: (asset: string) => (
+      <ActionModal label="Cast Vote" endpoint="/vote/action/vote" asset={asset} />
+    )
   }
 ];
 
@@ -48,6 +57,7 @@ export const getVoteTableData = () => {
     bribesAndInterest: row['B&I'],
     votingAPR: row.VAPR,
     myVotes: row.MV,
-    myVotesRatio: row.MVP
+    myVotesRatio: row.MVP,
+    action: row.asset
   }));
 };
