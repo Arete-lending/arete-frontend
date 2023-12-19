@@ -1,11 +1,11 @@
 # TODOS
-- [ ] Action API link
 - [ ] Table cell renders
-- [ ] Modal for selecting asset & balance in actions
 - [ ] any TODO comments
 - [ ] Asset logo in tables
 - [ ] Arete logo
 - [ ] Table align
+- [x] Action API link
+- [x] Modal for selecting asset & balance in actions
 - [x] Action modal asset
 - [x] Change ActionModal for vote and bribe (xATE)
 - [x] Link gitbook (https://arete-finance.gitbook.io/introduction/introduction/welcome-to-arete)
@@ -37,8 +37,8 @@
 |:white_check_mark:|dashboard|`/dashboard/action/repay?address=???&asset=???&balance=???`|`GET`|Repay action|
 |:white_check_mark:|ate|`/ate/header?address=???`|`GET`|xATE tab header|
 |:white_check_mark:|ate|`/ate/vesting?address=???`|`GET`|contents of "Extract ATE" table|
-|:white_large_square:|ate|`/ate/action/forge?address=???&balance=???`|`GET`|Forge action|
-|:white_large_square:|ate|`/ate/action/extract?address=???&index=???`|`GET`|Extract action|
+|:white_check_mark:|ate|`/ate/action/forge?address=???&balance=???`|`GET`|Forge action|
+|:white_check_mark:|ate|`/ate/action/extract?address=???&index=???`|`GET`|Extract action|
 |:white_check_mark:|vote|`/vote/header?address=???`|`GET`|Vote tab header & Vote Power Used information|
 |:white_check_mark:|vote|`/vote/content?address=???`|`GET`|Vote tab table content|
 |:white_check_mark:|vote|`/vote/action/vote?address=???&asset=???&balance=???`|`GET`|Vote table action|
