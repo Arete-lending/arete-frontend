@@ -1,12 +1,14 @@
 import { getVoteTable } from '@/apis/vote';
 import ActionModal from '../action-modal';
+import AssetLogo from '../asset-logo';
 
 export const voteColumns = [
   {
     title: 'Assets',
     key: 'assets',
     dataIndex: 'assets',
-    align: 'center'
+    align: 'center',
+    render: (asset: string) => <AssetLogo asset={asset} />
   },
   {
     title: 'Total Votes',

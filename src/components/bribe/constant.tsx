@@ -1,12 +1,14 @@
 import { getBribeTable } from '@/apis/bribe';
 import ActionModal from '../action-modal';
+import AssetLogo from '../asset-logo';
 
 export const bribeColumns = [
   {
     title: 'Assets',
     dataIndex: 'assets',
     key: 'assets',
-    align: 'center'
+    align: 'center',
+    render: (asset: string) => <AssetLogo asset={asset} />
   },
   {
     title: 'Total Votes',

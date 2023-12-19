@@ -1,11 +1,13 @@
 import { getMarketTableContent } from '@/apis/market';
+import AssetLogo from '../asset-logo';
 
 export const columns = [
   {
     title: 'Assets',
     dataIndex: 'assets',
     key: 'assets',
-    align: 'center'
+    align: 'center',
+    render: (asset: string) => <AssetLogo asset={asset} />
   },
   {
     title: 'Collateral Type',

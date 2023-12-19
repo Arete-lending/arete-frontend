@@ -5,13 +5,15 @@ import {
   getToSupplyTable
 } from '@/apis/dashboard';
 import ActionModal from '../action-modal';
+import AssetLogo from '../asset-logo';
 
 export const supplyColumns = [
   {
     title: 'Asset',
     dataIndex: 'asset',
     key: 'asset',
-    align: 'center'
+    align: 'center',
+    render: (asset: string) => <AssetLogo asset={asset} />
   },
   {
     title: 'Balance',
@@ -59,7 +61,8 @@ export const borrowColumns = [
     title: 'Asset',
     dataIndex: 'asset',
     key: 'asset',
-    align: 'center'
+    align: 'center',
+    render: (asset: string) => <AssetLogo asset={asset} />
   },
   {
     title: 'Debt',
@@ -100,7 +103,8 @@ export const toSupplyColumns = [
     title: 'Asset',
     dataIndex: 'asset',
     key: 'asset',
-    align: 'center'
+    align: 'center',
+    render: (asset: string) => <AssetLogo asset={asset} />
   },
   {
     title: 'Wallet Balance',
@@ -148,7 +152,8 @@ export const toBorrowColumns = [
     title: 'Asset',
     dataIndex: 'asset',
     key: 'asset',
-    align: 'center'
+    align: 'center',
+    render: (asset: string) => <AssetLogo asset={asset} />
   },
   {
     title: 'Available',
