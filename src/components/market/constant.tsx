@@ -31,7 +31,13 @@ export const columns = [
     title: 'Total Supplied',
     dataIndex: 'totalSupplied',
     key: 'totalSupplied',
-    align: 'right' as const
+    align: 'right' as const,
+    render: (ts: string[]) => (
+      <>
+        <p>{ts[0]}</p>
+        <p className="text-[12px] opacity-70">{ts[1]}</p>
+      </>
+    )
   },
   {
     title: 'Borrow APY',
@@ -43,13 +49,25 @@ export const columns = [
     title: 'Total Borrowed',
     dataIndex: 'totalBorrowed',
     key: 'totalBorrowed',
-    align: 'right' as const
+    align: 'right' as const,
+    render: (tb: string[]) => (
+      <>
+        <p>{tb[0]}</p>
+        <p className="text-[12px] opacity-70">{tb[1]}</p>
+      </>
+    )
   },
   {
     title: 'Available',
     dataIndex: 'available',
     key: 'available',
-    align: 'right' as const
+    align: 'right' as const,
+    render: (ta: string[]) => (
+      <>
+        <p>{ta[0]}</p>
+        <p className="text-[12px] opacity-70">{ta[1]}</p>
+      </>
+    )
   }
 ];
 
@@ -62,10 +80,10 @@ export const getMarketTableData = () => {
     collateralType: row.ctype,
     lTV: row.LTV,
     supplyAPY: row.sAPY,
-    totalSupplied: row.TS,
+    totalSupplied: [row.TS, row.TSC],
     borrowAPY: row.bAPY,
-    totalBorrowed: row.TB,
-    available: row.AV
+    totalBorrowed: [row.TB, row.TBC],
+    available: [row.AV, row.AVC]
   }));
 };
 
