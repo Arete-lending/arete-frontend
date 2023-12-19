@@ -1,7 +1,7 @@
 # TODOS
 - [ ] Table cell renders
 - [ ] any TODO comments
-- [ ] Asset logo in tables
+- [x] Asset logo in tables
 - [x] Arete logo
 - [x] Table align
 - [x] Action API link

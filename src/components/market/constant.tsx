@@ -6,50 +6,50 @@ export const columns = [
     title: 'Assets',
     dataIndex: 'assets',
     key: 'assets',
-    align: 'center',
+    align: 'center' as const,
     render: (asset: string) => <AssetLogo asset={asset} />
   },
   {
     title: 'Collateral Type',
     dataIndex: 'collateralType',
     key: 'collateralType',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'LTV',
     dataIndex: 'lTV',
     key: 'lTV',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Supply APY',
     dataIndex: 'supplyAPY',
     key: 'supplyAPY',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Total Supplied',
     dataIndex: 'totalSupplied',
     key: 'totalSupplied',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Borrow APY',
     dataIndex: 'borrowAPY',
     key: 'borrowAPY',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Total Borrowed',
     dataIndex: 'totalBorrowed',
     key: 'totalBorrowed',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Available',
     dataIndex: 'available',
     key: 'available',
-    align: 'right'
+    align: 'right' as const
   }
 ];
 

@@ -7,44 +7,44 @@ export const voteColumns = [
     title: 'Assets',
     key: 'assets',
     dataIndex: 'assets',
-    align: 'center',
+    align: 'center' as const,
     render: (asset: string) => <AssetLogo asset={asset} />
   },
   {
     title: 'Total Votes',
     key: 'totalVotes',
     dataIndex: 'totalVotes',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Bribes',
     key: 'bribes',
     dataIndex: 'bribes',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Bribes + Interest',
     key: 'bribesAndInterest',
     dataIndex: 'bribesAndInterest',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Voting APR',
     key: 'votingAPR',
     dataIndex: 'votingAPR',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'My Votes',
     key: 'myVotes',
     dataIndex: 'myVotes',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'My Votes %',
     key: 'myVotesRatio',
     dataIndex: 'myVotesRatio',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Action',
@@ -53,7 +53,7 @@ export const voteColumns = [
     render: (asset: string) => (
       <ActionModal label="Cast Vote" endpoint="/vote/action/vote" asset={asset} isVoteOrBribe />
     ),
-    align: 'center'
+    align: 'center' as const
   }
 ];
 

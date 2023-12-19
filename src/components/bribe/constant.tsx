@@ -7,38 +7,38 @@ export const bribeColumns = [
     title: 'Assets',
     dataIndex: 'assets',
     key: 'assets',
-    align: 'center',
+    align: 'center' as const,
     render: (asset: string) => <AssetLogo asset={asset} />
   },
   {
     title: 'Total Votes',
     dataIndex: 'totalVotes',
     key: 'totalVotes',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Total Bribery',
     dataIndex: 'totalBribery',
     key: 'totalBribery',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Bribes + Interest',
     dataIndex: 'bribesAndInterest',
     key: 'bribesAndInterest',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Voting APR',
     dataIndex: 'votingAPR',
     key: 'votingAPR',
-    align: 'right'
+    align: 'right' as const
   },
   {
     title: 'Action',
     dataIndex: 'action',
     key: 'action',
-    align: 'center',
+    align: 'center' as const,
     render: (asset: string) => (
       <ActionModal label="Bribe" endpoint="/bribe/action/bribe" asset={asset} isVoteOrBribe />
     )
