@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button, Tag } from 'antd';
 import { useSDK } from '@metamask/sdk-react';
-import { CheckCircleOutlined } from '@ant-design/icons';
+import { CheckCircleOutlined, SlidersFilled } from '@ant-design/icons';
 
 const Header = () => {
   const { sdk } = useSDK();
@@ -18,6 +18,7 @@ const Header = () => {
       <div className="flex justify-between items-center w-[1200px] h-[60px]">
         <div className="flex gap-[60px] font-bold items-center">
           <Link to="/" className="mr-[60px] text-[20px] no-underline text-twhite">
+            <SlidersFilled className="mr-[5px]" />
             Arete
           </Link>
           <Link to="/" className="no-underline text-twhite">
