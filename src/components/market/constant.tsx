@@ -71,7 +71,6 @@ export const columns = [
   }
 ];
 
-// TODO: add cell renders
 export const getMarketTableData = () => {
   const table = getMarketTableContent();
   return table?.map((row, i) => ({

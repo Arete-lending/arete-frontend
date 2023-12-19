@@ -1,6 +1,6 @@
 # TODOS
-- [ ] Table cell renders
 - [ ] Rerender after actions
+- [x] Table cell renders
 - [x] Asset logo in tables
 - [x] Arete logo
 - [x] Table align
