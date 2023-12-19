@@ -1,3 +1,4 @@
+import { DOCS_URL } from '@/apis/config';
 import { getVoteHeader } from '@/apis/vote';
 import EpochCard from '@/components/epoch-card';
 import VoteTable from '@/components/vote/vote-table';
@@ -30,7 +31,11 @@ const Vote = () => {
           </div>
           <div>
             Voters earn all bribes and interest split from the asset voted during the epoch.
-            Unchanged votes carry over into the next epoch.
+            Unchanged votes carry over into the next epoch. Read{' '}
+            <a href={DOCS_URL} className="text-tprimary" rel="noreferrer" target="_blank">
+              our docs
+            </a>{' '}
+            for more details.
           </div>
         </div>
         <EpochCard />

@@ -5,7 +5,8 @@ export default {
     extend: {},
     colors: {
       tblack: '#141414',
-      twhite: '#ffffffd9'
+      twhite: '#ffffffd9',
+      tprimary: '#dc4446'
     }
   },
   plugins: [],
