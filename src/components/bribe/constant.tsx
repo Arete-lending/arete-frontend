@@ -14,13 +14,25 @@ export const bribeColumns = [
     title: 'Total Votes',
     dataIndex: 'totalVotes',
     key: 'totalVotes',
-    align: 'right' as const
+    align: 'right' as const,
+    render: (tv: string[]) => (
+      <>
+        <p>{tv[0]}</p>
+        <p className="text-[12px] opacity-70">{tv[1]}</p>
+      </>
+    )
   },
   {
     title: 'Total Bribery',
     dataIndex: 'totalBribery',
     key: 'totalBribery',
-    align: 'right' as const
+    align: 'right' as const,
+    render: (tb: string[]) => (
+      <>
+        <p>{tb[0]}</p>
+        <p className="text-[12px] opacity-70">{tb[1]}</p>
+      </>
+    )
   },
   {
     title: 'Bribes + Interest',
@@ -50,8 +62,8 @@ export const getBribeTableData = () => {
   return table?.map((row, i) => ({
     key: i,
     assets: row.asset,
-    totalVotes: row.TV,
-    totalBribery: row.TB,
+    totalVotes: [row.TV, row.TVP],
+    totalBribery: [row.TB, row.TBC],
     bribesAndInterest: row['B&I'],
     votingAPR: row.VAPR,
     action: row.asset
