@@ -1,4 +1,5 @@
-import { useAxios } from './config';
+import axios from 'axios';
+import { useAxios, addr } from './config';
 
 interface ATEHeader {
   ATE: {
@@ -23,4 +24,10 @@ interface ATEVesting {
 
 export const getATEVesting = () => {
   return useAxios<ATEVesting[]>('/ate/vesting', true);
+};
+
+export const onExtract = async (idx: number) => {
+  const res = await axios.get(`/ate/action/extract?address=${addr}&index=${idx}`);
+  // TODO: alert by res
+  console.log(res);
 };
