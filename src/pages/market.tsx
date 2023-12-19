@@ -4,7 +4,7 @@ import AssetTable from '@/components/market/asset-table';
 const Market = () => {
   const marketHeader = getMarketHeader();
   return (
-    <div className="overflow-auto w-full flex flex-col items-center">
+    <div className="overflow-auto w-full flex flex-col items-center pb-[60px]">
       <div className="flex w-[1200px] gap-[60px] my-[60px]">
         <div>
           <div className="flex font-bold text-[42px] h-[60px] mb-[10px] items-end">

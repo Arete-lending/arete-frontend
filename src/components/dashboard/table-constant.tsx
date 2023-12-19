@@ -4,7 +4,7 @@ import {
   getToBorrowTable,
   getToSupplyTable
 } from '@/apis/dashboard';
-import ActionModal from '../modal';
+import ActionModal from '../action-modal';
 
 export const supplyColumns = [
   {

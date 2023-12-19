@@ -4,7 +4,7 @@ import EpochCard from '@/components/epoch-card';
 
 const Bribe = () => {
   return (
-    <div className="overflow-auto w-full flex flex-col items-center">
+    <div className="overflow-auto w-full flex flex-col items-center pb-[60px]">
       <div className="flex justify-between items-center w-[1200px] gap-[60px] my-[60px]">
         <div>
           <div className="font-bold text-[36px] my-[12px]">Bribe</div>
