@@ -3,7 +3,7 @@
 - [ ] any TODO comments
 - [ ] Asset logo in tables
 - [ ] Arete logo
-- [ ] Table align
+- [x] Table align
 - [x] Action API link
 - [x] Modal for selecting asset & balance in actions
 - [x] Action modal asset

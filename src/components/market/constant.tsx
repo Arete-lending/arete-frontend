@@ -4,42 +4,50 @@ export const columns = [
   {
     title: 'Assets',
     dataIndex: 'assets',
-    key: 'assets'
+    key: 'assets',
+    align: 'center'
   },
   {
     title: 'Collateral Type',
     dataIndex: 'collateralType',
-    key: 'collateralType'
+    key: 'collateralType',
+    align: 'right'
   },
   {
     title: 'LTV',
     dataIndex: 'lTV',
-    key: 'lTV'
+    key: 'lTV',
+    align: 'right'
   },
   {
     title: 'Supply APY',
     dataIndex: 'supplyAPY',
-    key: 'supplyAPY'
+    key: 'supplyAPY',
+    align: 'right'
   },
   {
     title: 'Total Supplied',
     dataIndex: 'totalSupplied',
-    key: 'totalSupplied'
+    key: 'totalSupplied',
+    align: 'right'
   },
   {
     title: 'Borrow APY',
     dataIndex: 'borrowAPY',
-    key: 'borrowAPY'
+    key: 'borrowAPY',
+    align: 'right'
   },
   {
     title: 'Total Borrowed',
     dataIndex: 'totalBorrowed',
-    key: 'totalBorrowed'
+    key: 'totalBorrowed',
+    align: 'right'
   },
   {
     title: 'Available',
     dataIndex: 'available',
-    key: 'available'
+    key: 'available',
+    align: 'right'
   }
 ];
 

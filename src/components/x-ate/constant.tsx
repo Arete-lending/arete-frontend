@@ -36,23 +36,27 @@ export const extractColumns = [
   {
     title: 'xATE vesting',
     key: 'xVesting',
-    dataIndex: 'xVesting'
+    dataIndex: 'xVesting',
+    align: 'right'
   },
   {
     title: 'ATE output',
     key: 'output',
-    dataIndex: 'output'
+    dataIndex: 'output',
+    align: 'right'
   },
   {
     title: 'Elapsed time',
     key: 'time',
-    dataIndex: 'time'
+    dataIndex: 'time',
+    align: 'right'
   },
   {
     title: 'Actions',
     key: 'actions',
     dataIndex: 'actions',
-    render: (idx: number) => <Button onClick={() => onExtract(idx)}>Extract ATE</Button>
+    render: (idx: number) => <Button onClick={() => onExtract(idx)}>Extract ATE</Button>,
+    align: 'center'
   }
 ];
 

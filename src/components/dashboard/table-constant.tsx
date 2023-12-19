@@ -10,22 +10,26 @@ export const supplyColumns = [
   {
     title: 'Asset',
     dataIndex: 'asset',
-    key: 'asset'
+    key: 'asset',
+    align: 'center'
   },
   {
     title: 'Balance',
     dataIndex: 'balance',
-    key: 'balance'
+    key: 'balance',
+    align: 'right'
   },
   {
     title: 'APY',
     dataIndex: 'aPY',
-    key: 'aPY'
+    key: 'aPY',
+    align: 'right'
   },
   {
     title: 'Collateral',
     dataIndex: 'collateral',
-    key: 'collateral'
+    key: 'collateral',
+    align: 'right'
   },
   {
     title: 'Action',
@@ -33,7 +37,8 @@ export const supplyColumns = [
     key: 'action',
     render: (asset: string) => (
       <ActionModal label="Withdraw" endpoint="/dashboard/action/withdraw" asset={asset} />
-    )
+    ),
+    align: 'center'
   }
 ];
 
@@ -53,17 +58,20 @@ export const borrowColumns = [
   {
     title: 'Asset',
     dataIndex: 'asset',
-    key: 'asset'
+    key: 'asset',
+    align: 'center'
   },
   {
     title: 'Debt',
     dataIndex: 'debt',
-    key: 'debt'
+    key: 'debt',
+    align: 'right'
   },
   {
     title: 'APY',
     dataIndex: 'aPY',
-    key: 'aPY'
+    key: 'aPY',
+    align: 'right'
   },
   {
     title: 'Action',
@@ -71,7 +79,8 @@ export const borrowColumns = [
     key: 'action',
     render: (asset: string) => (
       <ActionModal label="Repay" endpoint="/dashboard/action/repay" asset={asset} />
-    )
+    ),
+    align: 'center'
   }
 ];
 
@@ -90,22 +99,26 @@ export const toSupplyColumns = [
   {
     title: 'Asset',
     dataIndex: 'asset',
-    key: 'asset'
+    key: 'asset',
+    align: 'center'
   },
   {
     title: 'Wallet Balance',
     dataIndex: 'walletBalance',
-    key: 'walletBalance'
+    key: 'walletBalance',
+    align: 'right'
   },
   {
     title: 'APY',
     dataIndex: 'aPY',
-    key: 'aPY'
+    key: 'aPY',
+    align: 'right'
   },
   {
     title: 'Collateral Type',
     dataIndex: 'collateralType',
-    key: 'collateralType'
+    key: 'collateralType',
+    align: 'right'
   },
   {
     title: 'Action',
@@ -113,7 +126,8 @@ export const toSupplyColumns = [
     key: 'action',
     render: (asset: string) => (
       <ActionModal label="Supply" endpoint="/dashboard/action/supply" asset={asset} />
-    )
+    ),
+    align: 'center'
   }
 ];
 
@@ -133,17 +147,20 @@ export const toBorrowColumns = [
   {
     title: 'Asset',
     dataIndex: 'asset',
-    key: 'asset'
+    key: 'asset',
+    align: 'center'
   },
   {
     title: 'Available',
     dataIndex: 'available',
-    key: 'available'
+    key: 'available',
+    align: 'right'
   },
   {
     title: 'APY',
     dataIndex: 'aPY',
-    key: 'aPY'
+    key: 'aPY',
+    align: 'right'
   },
   {
     title: 'Action',
@@ -151,7 +168,8 @@ export const toBorrowColumns = [
     key: 'action',
     render: (asset: string) => (
       <ActionModal label="Borrow" endpoint="/dashboard/action/borrow" asset={asset} />
-    )
+    ),
+    align: 'center'
   }
 ];
 
