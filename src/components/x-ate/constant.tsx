@@ -58,7 +58,6 @@ export const extractColumns = [
 
 export const getATEVestingTable = () => {
   const table = getATEVesting();
-  // TODO: add action render
   return table?.map((row, i) => ({
     key: i,
     xVesting: row.xKZA,

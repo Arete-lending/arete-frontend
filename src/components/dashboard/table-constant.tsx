@@ -37,7 +37,6 @@ export const supplyColumns = [
   }
 ];
 
-// TODO: action
 export const getSupplyTableData = () => {
   const table = getSupplyTable();
   return table?.map((row, i) => ({
@@ -76,7 +75,6 @@ export const borrowColumns = [
   }
 ];
 
-// TODO: action
 export const getBorrowTableData = () => {
   const table = getBorrowTable();
   return table?.map((row, i) => ({
@@ -119,7 +117,6 @@ export const toSupplyColumns = [
   }
 ];
 
-// TODO: action
 export const getToSupplyTableData = () => {
   const table = getToSupplyTable();
   return table?.map((row, i) => ({
@@ -158,7 +155,6 @@ export const toBorrowColumns = [
   }
 ];
 
-// TODO: action
 export const getToBorrowTableData = () => {
   const table = getToBorrowTable();
   return table?.map((row, i) => ({

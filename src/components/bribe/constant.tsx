@@ -37,7 +37,6 @@ export const bribeColumns = [
   }
 ];
 
-// TODO: implement action
 export const getBribeTableData = () => {
   const table = getBribeTable();
   return table?.map((row, i) => ({

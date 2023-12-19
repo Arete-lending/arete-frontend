@@ -8,7 +8,6 @@ const Header = () => {
 
   const connectWallet = async () => {
     const accounts = await sdk?.connect();
-    // TODO: choose account from accounts (current: picks the first one)
     localStorage.setItem('account', (accounts as string[])?.[0]);
   };
 
