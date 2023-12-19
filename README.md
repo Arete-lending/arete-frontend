@@ -36,8 +36,8 @@
 |:white_large_square:|dashboard|`/dashboard/action/repay?address=???&asset=???&balance=???`|`GET`|Repay action|
 |:white_check_mark:|ate|`/ate/header?address=???`|`GET`|xATE tab header|
 |:white_check_mark:|ate|`/ate/vesting?address=???`|`GET`|contents of "Extract ATE" table|
-|:white_large_square:|ate|`/ate/action/forge?address=???&asset=???&balance=???`|`GET`|Forge action|
-|:white_large_square:|ate|`/ate/action/extract?address=???&asset=???&balance=???`|`GET`|Extract action|
+|:white_large_square:|ate|`/ate/action/forge?address=???&balance=???`|`GET`|Forge action|
+|:white_large_square:|ate|`/ate/action/extract?address=???&index=???`|`GET`|Extract action|
 |:white_check_mark:|vote|`/vote/header?address=???`|`GET`|Vote tab header & Vote Power Used information|
 |:white_check_mark:|vote|`/vote/content?address=???`|`GET`|Vote tab table content|
 |:white_large_square:|vote|`/vote/action/vote?address=???&asset=???&balance=???`|`GET`|Vote table action|
