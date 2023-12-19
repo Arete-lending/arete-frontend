@@ -15,7 +15,7 @@ const Header = () => {
   const account = localStorage.getItem('account');
 
   return (
-    <div className="shadow-[0_1px_4px_rgba(255,255,255,0.16)] top-0 sticky w-full flex justify-center bg-tblack">
+    <div className="shadow-[0_1px_4px_rgba(255,255,255,0.16)] top-0 sticky w-full flex justify-center bg-tblack z-10">
       <div className="flex justify-between items-center w-[1200px] h-[60px]">
         <div className="flex gap-[60px] font-bold items-center">
           <Link to="/" className="mr-[60px] text-[20px] no-underline text-twhite">
