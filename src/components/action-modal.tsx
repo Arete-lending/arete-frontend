@@ -1,5 +1,5 @@
 import { addr } from '@/apis/config';
-import { Button, Input, Modal } from 'antd';
+import { Button, Input, Modal, message } from 'antd';
 import axios from 'axios';
 import { useState } from 'react';
 
@@ -20,8 +20,8 @@ const ActionModal = ({ label, endpoint, asset, isVoteOrBribe }: ActionModalProps
     const res = await axios.get(
       `${endpoint}?address=${addr}&asset=${asset.toLowerCase()}&balance=${balance}`
     );
-    // TODO: alert by res
-    console.log(res);
+    if (res.status === 200) message.success('Action successful');
+    else message.error('Action failed');
     setIsOpen(false);
   };
   const handleCancel = () => {

@@ -1,6 +1,5 @@
 # TODOS
 - [ ] Table cell renders
-- [ ] any TODO comments
 - [x] Asset logo in tables
 - [x] Arete logo
 - [x] Table align
