@@ -1,19 +1,31 @@
 import { Button, Card, Input, Table } from 'antd';
 import { extractColumns, getATEVestingTable } from './constant';
+import { useState } from 'react';
+import { onForge } from '@/apis/x-ate';
 
 const TokenManager = () => {
+  const [balance, setBalance] = useState('');
   return (
     <div className="flex w-[1200px] gap-[60px]">
       <Card title="Forge xATE">
         <p>Forge your ATE into xATE</p>
-        <Input className="w-[240px] mt-[20px] mb-[5px]" />
-        <div className="flex justify-end items-center w-full gap-[5px] text-[12px]">
+        <Input
+          className="w-[240px] mt-[20px] mb-[20px] text-right"
+          addonAfter="ATE"
+          placeholder="0.00"
+          value={balance}
+          onChange={(e) => setBalance(e.target.value)}
+        />
+        {/* <div className="flex justify-end items-center w-full gap-[5px] text-[12px]">
           Balance 0.00{' '}
           <Button size="small" style={{ fontSize: '12px' }}>
             MAX
           </Button>
-        </div>
-        <Button className="w-full mt-[5px]">Forge xATE</Button>
+        </div> */}
+        <div />
+        <Button className="w-[240px] mt-[5px]" onClick={() => onForge(balance)}>
+          Forge xATE
+        </Button>
       </Card>
       <Card title="Extract ATE" className="flex-1">
         <div className="flex justify-between items-end pb-[30px]">

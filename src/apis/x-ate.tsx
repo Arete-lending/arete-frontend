@@ -31,3 +31,9 @@ export const onExtract = async (idx: number) => {
   // TODO: alert by res
   console.log(res);
 };
+
+export const onForge = async (balance: string) => {
+  const res = await axios.get(`/ate/action/forge?address=${addr}&balance=${balance}`);
+  // TODO: alert by res
+  console.log(res);
+};
