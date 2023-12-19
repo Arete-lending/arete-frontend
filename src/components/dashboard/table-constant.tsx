@@ -4,6 +4,7 @@ import {
   getToBorrowTable,
   getToSupplyTable
 } from '@/apis/dashboard';
+import ActionModal from '../modal';
 
 export const supplyColumns = [
   {
@@ -29,7 +30,8 @@ export const supplyColumns = [
   {
     title: 'Action',
     dataIndex: 'action',
-    key: 'action'
+    key: 'action',
+    render: () => <ActionModal label="Withdraw" />
   }
 ];
 
@@ -65,7 +67,8 @@ export const borrowColumns = [
   {
     title: 'Action',
     dataIndex: 'action',
-    key: 'action'
+    key: 'action',
+    render: () => <ActionModal label="Repay" />
   }
 ];
 
@@ -105,7 +108,8 @@ export const toSupplyColumns = [
   {
     title: 'Action',
     dataIndex: 'action',
-    key: 'action'
+    key: 'action',
+    render: () => <ActionModal label="Supply" />
   }
 ];
 
@@ -141,7 +145,8 @@ export const toBorrowColumns = [
   {
     title: 'Action',
     dataIndex: 'action',
-    key: 'action'
+    key: 'action',
+    render: () => <ActionModal label="Borrow" />
   }
 ];
 
