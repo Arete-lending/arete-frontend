@@ -11,7 +11,7 @@ axios.defaults.baseURL = BASE_URL;
 export const addr = TEST_ACCOUNT;
 // export const addr = localStorage.getItem('address');
 
-export const useAxios = <T>(endpoint: string, useAddress: boolean = false) => {
+export const useAxios = <T>(endpoint: string, useAddress: boolean = false, deps: any[] = []) => {
   const [data, setData] = useState<T>();
   const url = useAddress ? endpoint + `?address=${addr}` : endpoint;
   const req = async () => {
@@ -20,6 +20,6 @@ export const useAxios = <T>(endpoint: string, useAddress: boolean = false) => {
   };
   useEffect(() => {
     req();
-  }, []);
+  }, deps);
   return data;
 };

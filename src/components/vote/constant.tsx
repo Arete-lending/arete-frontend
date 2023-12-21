@@ -57,8 +57,8 @@ export const voteColumns = [
   }
 ];
 
-export const getVoteTableData = () => {
-  const table = getVoteTable();
+export const getVoteTableData = (deps: any[] = []) => {
+  const table = getVoteTable(deps);
   return table?.map((row, i) => ({
     key: i,
     assets: row.asset,

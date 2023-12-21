@@ -23,14 +23,16 @@ interface ATEVesting {
   etime: string;
 }
 
-export const getATEVesting = () => {
-  return useAxios<ATEVesting[]>('/ate/vesting', true);
+export const getATEVesting = (deps: any[] = []) => {
+  return useAxios<ATEVesting[]>('/ate/vesting', true, deps);
 };
 
-export const onExtract = async (idx: number) => {
+export const onExtract = async (idx: number, forceUpdate: () => void) => {
   const res = await axios.get(`/ate/action/extract?address=${addr}&index=${idx}`);
-  if (res.status === 200) message.success('Extract successful');
-  else message.error('Extract error');
+  if (res.status === 200) {
+    message.success('Extract successful');
+    forceUpdate();
+  } else message.error('Extract error');
 };
 
 export const onForge = async (balance: string) => {

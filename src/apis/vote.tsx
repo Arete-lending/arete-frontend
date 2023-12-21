@@ -23,6 +23,6 @@ interface VoteTableRow {
   VAPR: string;
 }
 
-export const getVoteTable = () => {
-  return useAxios<VoteTableRow[]>('/vote/content', true);
+export const getVoteTable = (deps: any[] = []) => {
+  return useAxios<VoteTableRow[]>('/vote/content', true, deps);
 };

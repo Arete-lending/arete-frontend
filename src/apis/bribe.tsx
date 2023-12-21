@@ -12,6 +12,6 @@ interface BribeTableRow {
   token: string;
 }
 
-export const getBribeTable = () => {
-  return useAxios<BribeTableRow[]>('/bribe/content', true);
+export const getBribeTable = (deps: any[] = []) => {
+  return useAxios<BribeTableRow[]>('/bribe/content', true, deps);
 };

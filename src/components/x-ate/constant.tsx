@@ -32,7 +32,7 @@ export const getATEDescriptionItems = () => {
   };
 };
 
-export const extractColumns = [
+export const extractColumns = (forceUpdate: () => void) => [
   {
     title: 'xATE vesting',
     key: 'xVesting',
@@ -55,13 +55,15 @@ export const extractColumns = [
     title: 'Actions',
     key: 'actions',
     dataIndex: 'actions',
-    render: (idx: number) => <Button onClick={() => onExtract(idx)}>Extract ATE</Button>,
+    render: (idx: number) => (
+      <Button onClick={() => onExtract(idx, forceUpdate)}>Extract ATE</Button>
+    ),
     align: 'center' as const
   }
 ];
 
-export const getATEVestingTable = () => {
-  const table = getATEVesting();
+export const getATEVestingTable = (deps: any[] = []) => {
+  const table = getATEVesting(deps);
   return table?.map((row, i) => ({
     key: i,
     xVesting: row.xKZA,

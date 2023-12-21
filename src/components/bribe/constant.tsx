@@ -57,8 +57,8 @@ export const bribeColumns = [
   }
 ];
 
-export const getBribeTableData = () => {
-  const table = getBribeTable();
+export const getBribeTableData = (deps: any[] = []) => {
+  const table = getBribeTable(deps);
   return table?.map((row, i) => ({
     key: i,
     assets: row.asset,

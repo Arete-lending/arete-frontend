@@ -1,7 +1,8 @@
+import { FUContext } from '@/_app';
 import { addr } from '@/apis/config';
 import { Button, Input, Modal, message } from 'antd';
 import axios from 'axios';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 interface ActionModalProps {
   label: string;
@@ -13,6 +14,7 @@ interface ActionModalProps {
 const ActionModal = ({ label, endpoint, asset, isVoteOrBribe }: ActionModalProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [balance, setBalance] = useState('');
+  const { forceUpdate } = useContext(FUContext);
   const showModal = () => {
     setIsOpen(true);
   };
@@ -20,8 +22,10 @@ const ActionModal = ({ label, endpoint, asset, isVoteOrBribe }: ActionModalProps
     const res = await axios.get(
       `${endpoint}?address=${addr}&asset=${asset.toLowerCase()}&balance=${balance}`
     );
-    if (res.status === 200) message.success('Action successful');
-    else message.error('Action failed');
+    if (res.status === 200) {
+      message.success('Action successful');
+      forceUpdate();
+    } else message.error('Action failed');
     setIsOpen(false);
   };
   const handleCancel = () => {
